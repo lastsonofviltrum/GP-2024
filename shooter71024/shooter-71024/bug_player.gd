@@ -38,6 +38,9 @@ func _process(delta):
 		laser.visible = false
 		can_move = true
 		
+		
+		laser.visible = false
+		can_move = true
 
 		if position.x < 25:
 			position.x = 25
