@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://wk5jgsobmh3w"]
 
 [ext_resource type="Script" path="res://bomb.gd" id="1_kpyau"]
-[ext_resource type="Texture2D" uid="uid://csfstyjj1bcb6" path="res://sprites/bomb.png" id="2_578ah"]
+[ext_resource type="Texture2D" uid="uid://x8acnleoaoip" path="res://spaceMissiles_009.png" id="2_1tey5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f4qkr"]
 size = Vector2(14, 32)
@@ -11,7 +11,7 @@ position = Vector2(258, 404)
 script = ExtResource("1_kpyau")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_578ah")
+texture = ExtResource("2_1tey5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_f4qkr")
