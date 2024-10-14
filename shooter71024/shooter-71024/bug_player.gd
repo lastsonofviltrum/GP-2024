@@ -13,7 +13,7 @@ var can_move = true
 func _ready():
 	laser.visible = false
 
-@export var rot_speed:float = 100
+@export var rot_speed:float = 200
 var rs = rot_speed
 
 func _process(delta):

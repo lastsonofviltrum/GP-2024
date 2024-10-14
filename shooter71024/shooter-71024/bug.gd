@@ -3,8 +3,10 @@ extends Area2D
 @export var bomb_spawn:Node2D
 @export var bomb_scene:PackedScene
 @export var explosion_scene:PackedScene
+@onready var player :=CharacterBody2D
 
 var target_pos:Vector2
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -33,7 +35,6 @@ func _on_timer_timeout():
 		drop_bomb()
 	
 	pass # Replace with function body.
-
 
 func drop_bomb():
 	var bomb = bomb_scene.instantiate()

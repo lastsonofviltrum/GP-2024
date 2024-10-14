@@ -2,13 +2,11 @@
 
 [ext_resource type="Script" path="res://bugzap.gd" id="1_s2q5l"]
 [ext_resource type="Script" path="res://bug_player.gd" id="1_vqb0a"]
-[ext_resource type="PackedScene" path="res://explosion.tscn" id="2_rwge8"]
+[ext_resource type="PackedScene" uid="uid://nb8daasaeu3i" path="res://explosion.tscn" id="2_rwge8"]
+[ext_resource type="Texture2D" uid="uid://ccgn02t8b1bjf" path="res://spaceShips_004.png" id="4_axqmj"]
 [ext_resource type="PackedScene" uid="uid://b26mblvmunn4a" path="res://bug.tscn" id="4_k6dp0"]
 [ext_resource type="Theme" uid="uid://cbith6t7tea1p" path="res://bryans_theme.tres" id="8_12hsc"]
 [ext_resource type="Script" path="res://bug_spawner.gd" id="9_oaua2"]
-
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_rvup1"]
-size = Vector2(50, 20)
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_2f7eg"]
 size = Vector2(10, 30)
@@ -25,7 +23,7 @@ script = ExtResource("1_vqb0a")
 explosion_scene = ExtResource("2_rwge8")
 
 [node name="Sprite2D" type="Sprite2D" parent="player"]
-texture = SubResource("PlaceholderTexture2D_rvup1")
+texture = ExtResource("4_axqmj")
 
 [node name="Sprite2D2" type="Sprite2D" parent="player"]
 position = Vector2(0, -24)
@@ -45,6 +43,7 @@ points = PackedVector2Array(0, 0, 0, 0)
 width = 5.0
 
 [node name="laser" type="Area2D" parent="player/laser"]
+disable_mode = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player/laser/laser"]
 position = Vector2(2, -311)
