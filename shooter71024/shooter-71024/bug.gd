@@ -5,6 +5,7 @@ extends Area2D
 @export var explosion_scene:PackedScene
 @onready var player :=CharacterBody2D
 
+
 var target_pos:Vector2
 
 
@@ -29,6 +30,8 @@ func _on_timer_timeout():
 	if target_pos.x > w - 20:
 		target_pos.x = w - 20 
 	target_pos.y += 20
+
+
 	if randi_range(0, 2) == 0:
 		$AudioStreamPlayer2D.play()
 	
