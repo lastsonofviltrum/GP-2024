@@ -8,6 +8,7 @@ extends CharacterBody2D
 
 @onready var bug = $"../bug"
 
+
 var can_move = true
 
 func _ready():
@@ -38,6 +39,8 @@ func _process(delta):
 		laser.visible = false
 		can_move = true
 		
+
+			
 		
 		laser.visible = false
 		can_move = true
@@ -58,6 +61,8 @@ func _process(delta):
 		rotate(deg_to_rad(- rs * delta))
 	if Input.is_key_pressed(KEY_D):
 		rotate(deg_to_rad(rs * delta))
+		
+
 		
 		
 func _on_area_2d_area_entered(area):

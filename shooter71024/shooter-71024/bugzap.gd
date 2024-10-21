@@ -7,6 +7,9 @@ func _ready():
 	# DebugDraw2D.config.text_default_size = 24
 	pass
 	
+func print_stuff():
+		DebugDraw2D.set_text("pos", position)
+	
 func reset_game():
 	pass
 	
