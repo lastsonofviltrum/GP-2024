@@ -50,9 +50,10 @@ disable_mode = 1
 position = Vector2(2, -311)
 shape = SubResource("RectangleShape2D_7kvm8")
 
-[node name="bug" parent="." instance=ExtResource("4_k6dp0")]
+[node name="bug" parent="." node_paths=PackedStringArray("player") instance=ExtResource("4_k6dp0")]
 position = Vector2(100, 103)
 scale = Vector2(2, 1.22727)
+player = NodePath("../player")
 
 [node name="VSplitContainer" type="VSplitContainer" parent="."]
 visible = false

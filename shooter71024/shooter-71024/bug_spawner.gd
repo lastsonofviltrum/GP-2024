@@ -11,4 +11,5 @@ func _on_timer_timeout():
 	bug.position.x = randf_range(20, s.x - 20)
 	bug.position.y = randf_range(20, s.x - 20)
 	get_tree().root.add_child(bug)
+	
 	pass # Replace with function body.

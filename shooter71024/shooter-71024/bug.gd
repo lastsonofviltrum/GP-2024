@@ -3,21 +3,23 @@ extends Area2D
 @export var bomb_spawn:Node2D
 @export var bomb_scene:PackedScene
 @export var explosion_scene:PackedScene
-@onready var player :=CharacterBody2D
+@export var player:Node2D
+@export var speed = 200
 
 
 var target_pos:Vector2
 
-
 # Called when the node enters the scene tree for the first time.
-func _ready():
+func _ready() -> void:
 	pass # Replace with function body.
 
+func _process(delta: float) -> void:
+	
+	var to_player = player.global_position - global_position
+	
+	to_player = to_player.normalized()
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	global_position = lerp(global_position, target_pos, delta)
-	pass
+	global_position = global_position + (to_player * 100 * delta)
 
 
 func _on_timer_timeout():
@@ -41,7 +43,7 @@ func _on_timer_timeout():
 
 func drop_bomb():
 	var bomb = bomb_scene.instantiate()
-	bomb.global_position = bomb_spawn.global_position 
+	bomb.global_position = bomb_spawn.global_position
 	get_tree().root.add_child(bomb)
 	pass # Replace with function body.
 
@@ -52,5 +54,5 @@ func _on_area_entered(area):
 		explosion.global_position = global_position
 		explosion.emitting = true
 		get_tree().root.add_child(explosion)
-		# self.queue_free()		
+		self.queue_free()		
 pass
