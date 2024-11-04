@@ -3,9 +3,15 @@ extends Sprite2D
 @export var time = 5
 @export var speed = 10
 @onready var player = $"../Player"
+@export var radius = 500
+@export var count:int = 12
+@export var thing_scene:PackedScene
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	
+	var theta_inc
+	
 	pass # Replace with function body.
 
 
