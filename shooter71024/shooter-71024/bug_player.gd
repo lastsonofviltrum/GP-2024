@@ -39,11 +39,11 @@ func _process(delta):
 		laser.visible = false
 		can_move = true
 
-		
+
+	
 
 		
-		laser.visible = false
-		can_move = true
+
 
 	
 

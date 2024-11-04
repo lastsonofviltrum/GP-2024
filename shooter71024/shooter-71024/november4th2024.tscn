@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://d0lpunbk46033"]
+
+[ext_resource type="Texture2D" uid="uid://cjpl35xx5mtx6" path="res://icon.svg" id="1_42eot"]
+[ext_resource type="Script" path="res://player.gd" id="2_6871y"]
+[ext_resource type="Texture2D" uid="uid://c844yfbd26ea8" path="res://bug.png" id="3_so2sy"]
+[ext_resource type="Script" path="res://enemy.gd" id="4_ebgw4"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" type="Sprite2D" parent="."]
+position = Vector2(572, 328)
+texture = ExtResource("1_42eot")
+script = ExtResource("2_6871y")
+
+[node name="Enemy" type="Sprite2D" parent="."]
+texture = ExtResource("3_so2sy")
+script = ExtResource("4_ebgw4")
