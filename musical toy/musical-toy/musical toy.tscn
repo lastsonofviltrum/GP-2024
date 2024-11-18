@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://yvsjfp3vm4lb"]
+
+[ext_resource type="Texture2D" uid="uid://c0qqxesrdq3kd" path="res://icon.svg" id="1_pcsf1"]
+[ext_resource type="Script" path="res://kick.gd" id="2_f3av7"]
+[ext_resource type="AudioStream" uid="uid://cguvh2mmh02kc" path="res://kick.wav" id="3_5f1s1"]
+[ext_resource type="Script" path="res://kick_2.gd" id="4_xguad"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Kick" type="Sprite2D" parent="."]
+position = Vector2(165, 112.25)
+scale = Vector2(0.59375, 0.589844)
+texture = ExtResource("1_pcsf1")
+script = ExtResource("2_f3av7")
+
+[node name="Kick2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_5f1s1")
+script = ExtResource("4_xguad")
