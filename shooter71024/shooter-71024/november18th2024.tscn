@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfa4yf0086ny2"]
+
+[ext_resource type="Script" path="res://november_18th_2024.gd" id="1_d0or7"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(576, 326)
+script = ExtResource("1_d0or7")
