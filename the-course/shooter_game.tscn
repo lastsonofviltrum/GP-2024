@@ -10,6 +10,7 @@
 script = ExtResource("1_c5ar1")
 
 [node name="dude" parent="." instance=ExtResource("2_gm47b")]
+rotation = 5.66619
 color = Color(0, 1, 0.25, 0.847059)
 speed = 500.0
 explosion = ExtResource("3_c5ar1")
@@ -17,39 +18,39 @@ explosion = ExtResource("3_c5ar1")
 [node name="ufo_spawner" type="Marker2D" parent="."]
 script = ExtResource("4_gm47b")
 ufo_scene = ExtResource("3_6xsbg")
-count = 5
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="ufo_count" type="Label" parent="CanvasLayer"]
-offset_right = 134.0
-offset_bottom = 30.0
-text = "UFO_COUNT: 0"
+offset_top = 80.0
+offset_right = 407.0
+offset_bottom = 155.0
+text = "0 UFOs"
 
 [node name="lives" type="Label" parent="CanvasLayer"]
-offset_left = 1.0
-offset_top = 110.0
-offset_right = 331.0
-offset_bottom = 185.0
-text = "LIVES: 10"
+offset_left = 7.0
+offset_top = 901.0
+offset_right = 337.0
+offset_bottom = 976.0
+text = "100 HP"
 
 [node name="ammo" type="Label" parent="CanvasLayer"]
-offset_left = 8.0
-offset_top = 221.0
-offset_right = 338.0
-offset_bottom = 296.0
-text = "AMMO: 100"
+offset_left = 1536.0
+offset_top = 896.0
+offset_right = 1902.0
+offset_bottom = 971.0
+text = "100 LASERS"
 
 [node name="level" type="Label" parent="CanvasLayer"]
-offset_left = 8.0
-offset_top = 320.0
-offset_right = 338.0
-offset_bottom = 395.0
-text = "LEVEL: 0"
+offset_left = 887.0
+offset_top = 9.0
+offset_right = 1217.0
+offset_bottom = 84.0
+text = "ROUND 0"
 
 [node name="target" type="Label" parent="CanvasLayer"]
-offset_left = 14.0
-offset_top = 419.0
-offset_right = 344.0
-offset_bottom = 494.0
-text = "ufo_COUNT: 0"
+offset_left = 1689.0
+offset_top = 88.0
+offset_right = 2096.0
+offset_bottom = 163.0
+text = "0 ufoS"

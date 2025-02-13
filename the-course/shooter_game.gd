@@ -26,6 +26,6 @@ func _process(delta):
 	# if the dude reaches the target, advance to next level
 	if dude.ufo_count == target:
 		next_level()
-	$CanvasLayer/target.text="target_count: " + str(target)
-	$CanvasLayer/level.text="level: " + str(level)
+	$CanvasLayer/target.text=str(target) + " KILLS" 
+	$CanvasLayer/level.text="ROUND " + str(level)
 	pass
