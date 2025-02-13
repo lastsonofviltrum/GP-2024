@@ -1,4 +1,91 @@
-# Assignment 1
+# Assignments
+
+# Assignment 2: Chromatic Artillery: A Shooter as Art
+
+For this individual assignment, you will subvert the traditional shooter game genre by creating an artistic 2D or 3D "spreading joy" game using Godot. Instead of shooting to destroy, your player character will spread positive elements like love, colors, music, or life throughout the game world. The game can be top-down, side-scrolling, or any other perspective you choose. Transform the typical "enemy" into beings that need happiness, color, or healing. Your game should include at least one level, a start screen, player character, scoring system based on positive actions, and interactive non-player characters.
+Project Requirements
+
+Create positive particle effects (hearts, flowers, colors, musical notes)
+Transform "hostile" environments into vibrant, living spaces
+Score points through acts of creation rather than destruction
+Use sound and music to enhance the peaceful atmosphere
+Design characters that evolve visually as they receive positive energy
+
+This reframing maintains all the technical learning objectives while promoting creative, non-violent gameplay. Students can explore themes like:
+
+Environmental restoration
+Spreading art through a gray world
+Converting sadness into joy
+Musical harmony bringing people together
+Growing gardens in unexpected places
+
+Would you like me to elaborate on any aspect of this reframing?
+
+## Project Requirements
+
+Your project should demonstrate:
+
+- At least one scene with a well-designed user interface
+- Interactivity with player controls and npc behavior
+- arrays, loops, and if statements
+- Implementation of scoring and level progression
+- Use of Godot systems (e.g., physics, animation, sound, particle systems)
+- Regular Git commits with meaningful messages
+
+## Rubric
+
+| Category | Weighting | 1 | 2.1 | 2.2 | Pass | Fail |
+|----------|-----------|--------|----|----|----|----|
+| Complexity | 33% | Advanced use of loops, arrays, and conditionals. Complex enemy AI, multiple levels, power-ups, and procedural generation. Use of advanced Godot systems like shaders, particle effects, and custom scripts. High interactivity and replayability. | Good use of loops, arrays, and conditionals. Multiple enemy types, scoring system, and at least one level. Use of Godot systems like physics and animation. | Basic shooter mechanics with one level, scoring, and a an enemy. Minimal use of Godot systems. | Forked the repo, made some commits, basic mechanics implemented but incomplete. | Failed to fork the repo, no commits made, or project doesn't run. |
+| Aesthetic | 33% | High-quality, original assets (art, sound, animations). Visually cohesive and polished. Excellent visual feedback and effects. Unique and engaging art style. | Good-quality assets, some original and some acquired. Visually appealing and functional. Some visual feedback and effects. | Basic assets, mostly acquired. Functional but lacks polish. Minimal visual feedback. | Simple or unintuitive visuals. Assets are mostly premade. | Basic visuals with no polish or coherence. |
+| Documentation | 33% | Extensive and well-organized documentation. High-quality video demo. Regular, meaningful Git commits throughout the project. | Good documentation and video demo. Regular Git commits, mostly meaningful. | Basic documentation and video demo. Git commits concentrated near the end of the project. | Incomplete documentation or video. Few Git commits. | No documentation or video. No Git usage. |
+
+In your readme file in your project include:
+
+Name, Student number and course
+
+## Project Title
+
+## Video
+
+[![YouTube](http://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+
+## Screenshots
+
+## Description of the Project
+
+## Instructions for Use
+
+## How It Works
+
+## List of Classes/Assets in the Project
+
+| Class/Asset | Source |
+|-------------|--------|
+| Player.gd   | Self-written |
+| Enemy.gd    | Modified from [reference]() |
+| Bullet.gd   | From [reference]() |
+
+## References
+
+- Item 1
+- Item 2
+
+## What I Am Most Proud of in the Assignment
+
+Each team member
+
+## What I Learned
+
+Each team member
+
+## Game Design Document
+
+Include drawings of the levels and characters. Describe the gameplay mechanics, enemy behaviors, and any unique features of your game.
+
+Good luck, and have fun creating your shooter game! 🎮
+
+# Assignmemnt 1
 
 "A Musical Toy" 
 
