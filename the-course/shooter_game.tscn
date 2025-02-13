@@ -10,9 +10,10 @@
 script = ExtResource("1_c5ar1")
 
 [node name="dude" parent="." instance=ExtResource("2_gm47b")]
-rotation = 5.66619
+rotation = 3.44249
 color = Color(0, 1, 0.25, 0.847059)
 speed = 500.0
+ufo_count = null
 explosion = ExtResource("3_c5ar1")
 
 [node name="ufo_spawner" type="Marker2D" parent="."]
@@ -22,10 +23,11 @@ ufo_scene = ExtResource("3_6xsbg")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="ufo_count" type="Label" parent="CanvasLayer"]
-offset_top = 80.0
-offset_right = 407.0
-offset_bottom = 155.0
-text = "0 UFOs"
+offset_left = 28.0
+offset_top = 82.0
+offset_right = 435.0
+offset_bottom = 157.0
+text = "0 KILLs"
 
 [node name="lives" type="Label" parent="CanvasLayer"]
 offset_left = 7.0
@@ -53,4 +55,4 @@ offset_left = 1689.0
 offset_top = 88.0
 offset_right = 2096.0
 offset_bottom = 163.0
-text = "0 ufoS"
+text = "0 UFOS"

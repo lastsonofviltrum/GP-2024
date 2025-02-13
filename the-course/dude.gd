@@ -66,7 +66,8 @@ func _process(delta: float) -> void:
 	
 	# if not running in engine, update the lives ui
 	if ! Engine.is_editor_hint():	
-		$"../CanvasLayer/lives".text = str(lives) + " HP"
+		$"..CanvasLayer/lives".text=str(lives) + " HP" 
+		#$"..CanvasLayer/ufo_count".text = str(ufo_count) + " KILLS"
 		
 		# if i can fire
 		if Input.is_action_pressed("fire") and can_fire and ammo > 0:
