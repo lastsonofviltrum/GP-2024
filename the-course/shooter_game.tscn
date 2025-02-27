@@ -23,9 +23,14 @@ explosion = ExtResource("3_c5ar1")
 [node name="ufo_spawner" type="Marker2D" parent="."]
 script = ExtResource("4_gm47b")
 ufo_scene = ExtResource("3_6xsbg")
+radius = null
+count = null
+rate = null
+speed = null
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="ufo_spawner"]
 script = ExtResource("6_ejtda")
+speed = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ufo_spawner/CharacterBody2D"]
 shape = SubResource("RectangleShape2D_ndjor")
