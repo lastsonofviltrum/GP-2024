@@ -1,0 +1,52 @@
+[gd_scene load_steps=9 format=3 uid="uid://de8w74fiv25e3"]
+
+[ext_resource type="Texture2D" uid="uid://c72tamkru2awa" path="res://icon.svg" id="1_ssobp"]
+[ext_resource type="Texture2D" uid="uid://3gbwc67mn7cx" path="res://reee playlist.png" id="2_8tpa7"]
+[ext_resource type="Script" uid="uid://btktxvl1wta1a" path="res://movement.gd" id="2_vrqld"]
+[ext_resource type="Script" uid="uid://dbqgfnsnyuycu" path="res://coin.gd" id="4_n3fri"]
+[ext_resource type="Texture2D" uid="uid://dolh1ju2smxeo" path="res://475051953_1153497619494352_6407268295542674802_n.png" id="4_yag16"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8tpa7"]
+size = Vector2(45.1613, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vrqld"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yag16"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(631, 333)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+scale = Vector2(4.02162, 0.518518)
+texture = ExtResource("1_ssobp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-2, 0)
+scale = Vector2(11.16, 2.8)
+shape = SubResource("RectangleShape2D_8tpa7")
+
+[node name="player" type="CharacterBody2D" parent="."]
+position = Vector2(559, 255)
+scale = Vector2(3.55766, 3.31956)
+script = ExtResource("2_vrqld")
+
+[node name="Sprite2D" type="Sprite2D" parent="player"]
+scale = Vector2(0.0243185, 0.024969)
+texture = ExtResource("2_8tpa7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
+shape = SubResource("RectangleShape2D_vrqld")
+
+[node name="coin" type="Area2D" parent="."]
+position = Vector2(806, 264)
+scale = Vector2(0.0718108, 0.0742285)
+script = ExtResource("4_n3fri")
+
+[node name="Sprite2D" type="Sprite2D" parent="coin"]
+texture = ExtResource("4_yag16")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="coin"]
+scale = Vector2(43.0086, 41.02)
+shape = SubResource("RectangleShape2D_yag16")
