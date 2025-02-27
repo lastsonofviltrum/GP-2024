@@ -11,7 +11,7 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("Jump"):
 		velocity.y = JUMP_VELOCITY
 	
-	var direction := Input.get_axis("ui_left", "ui_right")
+	var direction := Input.get_axis("Left", "Right")
 	if direction:
 		velocity.x = direction * SPEED
 	else:

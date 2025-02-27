@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://de8w74fiv25e3"]
+[gd_scene load_steps=10 format=3 uid="uid://de8w74fiv25e3"]
 
 [ext_resource type="Texture2D" uid="uid://c72tamkru2awa" path="res://icon.svg" id="1_ssobp"]
 [ext_resource type="Texture2D" uid="uid://3gbwc67mn7cx" path="res://reee playlist.png" id="2_8tpa7"]
 [ext_resource type="Script" uid="uid://btktxvl1wta1a" path="res://movement.gd" id="2_vrqld"]
+[ext_resource type="Script" uid="uid://d4h8c81f2kghs" path="res://enemy.gd" id="4_mv0na"]
 [ext_resource type="Script" uid="uid://dbqgfnsnyuycu" path="res://coin.gd" id="4_n3fri"]
 [ext_resource type="Texture2D" uid="uid://dolh1ju2smxeo" path="res://475051953_1153497619494352_6407268295542674802_n.png" id="4_yag16"]
 
@@ -37,6 +38,18 @@ scale = Vector2(0.0243185, 0.024969)
 texture = ExtResource("2_8tpa7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
+shape = SubResource("RectangleShape2D_vrqld")
+
+[node name="enemy" type="CharacterBody2D" parent="."]
+position = Vector2(559, 255)
+scale = Vector2(3.55766, 3.31956)
+script = ExtResource("4_mv0na")
+
+[node name="Sprite2D" type="Sprite2D" parent="enemy"]
+scale = Vector2(0.0243185, 0.024969)
+texture = ExtResource("2_8tpa7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enemy"]
 shape = SubResource("RectangleShape2D_vrqld")
 
 [node name="coin" type="Area2D" parent="."]
