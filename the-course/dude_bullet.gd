@@ -26,9 +26,9 @@ func _process(delta):
 		if coll.is_in_group("ufo"):
 			print("collided with a ufo")	
 			# update the ufo count			
-			var uc = $"../dude".ufo_count
-			$"../dude".ufo_count = uc + 1
-			$"../CanvasLayer/ufo_count".text = "UFO COUNT:" + str($"../dude".ufo_count)
+# 			var uc = $"../dude".ufo_count
+# 			$"../dude".ufo_count = uc + 1
+# 			$"../CanvasLayer/ufo_count".text = "UFO COUNT:" + str($"../dude".ufo_count)
 			# delete the ufo
 			c.get_collider().queue_free()
 			
@@ -40,7 +40,7 @@ func _process(delta):
 			pass
 		# create an explosion
 		var e = explosion.instantiate()
-		e.modulate = coll.color
+		# e.modulate = coll.color
 		get_parent().add_child(e)
 		e.global_position = self.global_position
 		e.emitting = true
