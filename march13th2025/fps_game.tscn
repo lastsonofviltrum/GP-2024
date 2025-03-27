@@ -7,10 +7,16 @@
 [ext_resource type="ArrayMesh" uid="uid://cmulj4mksgceh" path="res://kenney_retro-urban-kit/Models/OBJ format/pallet.obj" id="5_q41vd"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1r5kd"]
+shading_mode = 0
+diffuse_mode = 1
 albedo_texture = ExtResource("2_q41vd")
+uv1_scale = Vector3(5, 5, 5)
+uv1_triplanar = true
+uv2_scale = Vector3(16, 16, 16)
 texture_filter = 0
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_o6d5r"]
+size = Vector2(1.731, 1.731)
 
 [sub_resource type="Skin" id="Skin_jkgwa"]
 
@@ -25,16 +31,18 @@ size = Vector3(1, 0.510498, 1)
 script = ExtResource("1_uiy6f")
 score = 5
 speed = 800.0
+rot_speed = 800.0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
-transform = Transform3D(4.02701, 0, 0, 0, 1, 0, 0, 0, 3.86591, 0, 0, 0)
+transform = Transform3D(15.0466, 0, 0, 0, 1, 0, 0, 0, 17.4235, 0, 0, 0)
 material_override = SubResource("StandardMaterial3D_1r5kd")
 mesh = SubResource("PlaneMesh_o6d5r")
 skin = SubResource("Skin_jkgwa")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1.30774, 0, 0, 0, 1.731, 0, 0, 0, 1.49245, 0, 0, 0)
 shape = SubResource("WorldBoundaryShape3D_cykxj")
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
