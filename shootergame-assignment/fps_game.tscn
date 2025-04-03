@@ -1,15 +1,17 @@
-[gd_scene load_steps=12 format=3 uid="uid://w1a33w28w5tj"]
+[gd_scene load_steps=13 format=3 uid="uid://w1a33w28w5tj"]
 
 [ext_resource type="Script" uid="uid://72r8wthd0l" path="res://character_body_3d.gd" id="1_cykxj"]
 [ext_resource type="Script" uid="uid://075oehoxaht1" path="res://fps_game.gd" id="1_uiy6f"]
-[ext_resource type="Texture2D" uid="uid://p2jncnnf8l1e" path="res://kenney_retro-urban-kit/Models/OBJ format/Textures/asphalt.png" id="2_q41vd"]
+[ext_resource type="Texture2D" uid="uid://bogdn31hd2tot" path="res://kenney_retro-urban-kit/Models/OBJ format/Textures/grass.png" id="2_q41vd"]
+[ext_resource type="ArrayMesh" uid="uid://3tlnt2tkt2ok" path="res://kenney_retro-urban-kit/Models/OBJ format/tree-pine-large.obj" id="3_1r5kd"]
 [ext_resource type="Script" uid="uid://cvvvw7nsmblni" path="res://character_body_3d_2.gd" id="3_q41vd"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1r5kd"]
+depth_draw_mode = 2
 shading_mode = 0
 diffuse_mode = 1
 albedo_texture = ExtResource("2_q41vd")
-uv1_scale = Vector3(5, 5, 5)
+uv1_scale = Vector3(10, 10, 10)
 uv1_triplanar = true
 uv2_scale = Vector3(16, 16, 16)
 texture_filter = 0
@@ -44,6 +46,10 @@ skin = SubResource("Skin_jkgwa")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(1.30774, 0, 0, 0, 1.731, 0, 0, 0, 1.49245, 0, 0, 0)
 shape = SubResource("WorldBoundaryShape3D_cykxj")
+
+[node name="Tree-pine-large" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4004, 0, -3.49889)
+mesh = ExtResource("3_1r5kd")
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.23258, 0)
